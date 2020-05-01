@@ -71,6 +71,16 @@
   fill: #fff;
   height: 32px;
   margin: 0 0.556rem;
+  transition: opacity 0.25 ease-in-out;
+
+  &:focus {
+    outline: 2px dashed $clr-primary;
+    outline-offset: 0.2rem;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .copyright {
