@@ -1,0 +1,20 @@
+.main-nav__cta {
+  @include btn;
+  padding: 0.4rem 1.3rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  color: $clr-very-dark-cyan;
+  font-size: 0.6667rem;
+  font-weight: 700;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.25s ease-in-out;
+
+  @media (min-width: 576px) {
+    padding: 1rem 2.5rem;
+    font-size: 0.778rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+  }
+}

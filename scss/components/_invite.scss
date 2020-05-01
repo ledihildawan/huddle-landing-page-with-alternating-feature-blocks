@@ -1,0 +1,60 @@
+.invite {
+  margin-bottom: -3.667rem;
+}
+
+.invite__card {
+  padding: 2.778rem 1.389rem 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.889rem rgba(0, 0, 0, 0.06);
+
+  @media (min-width: 992px) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.invite__title {
+  margin: 0 0 1.389rem;
+  color: $clr-very-dark-cyan;
+  font-size: 0.889rem;
+  text-align: center;
+
+  @media (min-width: 576px) {
+    font-size: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.778rem;
+  }
+}
+
+.invite__cta {
+  @include btn;
+  padding: 0.778rem 2.2rem;
+  border-radius: 2rem;
+  background-color: $clr-primary;
+  color: #fff;
+  font-size: 0.6667rem;
+  font-weight: 700;
+  box-shadow: 0 0.2rem 0.4rem rgba($clr-primary, 0.38);
+  transition: box-shadow 0.25s ease-in-out;
+
+  @media (min-width: 576px) {
+    padding: 1rem 2.5rem;
+    font-size: 0.778rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0.2rem 0.6rem rgba($clr-primary, 0.6);
+  }
+
+  &--sm-large {
+    @media (min-width: 768px) {
+      padding: 1.667rem 5.556rem;
+      font-size: 1rem;
+    }
+  }
+}
